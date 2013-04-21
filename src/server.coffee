@@ -1,16 +1,9 @@
 cradle = require 'cradle'
 express = require 'express'
 
-app = express()
-
 db = new(cradle.Connection)(process.env.COUCH_IP, process.env.COUCH_PORT, {auth: {username: process.env.COUCH_USERNAME, password: process.env.COUCH_PASSWORD}}).database('ouisharefest-mentions')
 
-db.view 'peer/byScreenName', { key: 'elfpavlik' }, (err, doc) ->
-  if err
-    console.log err
-  else
-    #console.log doc
-
+app = express()
 app.use(express.static 'public')
 
 app.get '/mentions/:screen_name', (req, res) ->
