@@ -1,0 +1,19 @@
+doctype 5
+html(lang="en")
+  head
+    link(rel='stylesheet', href='screen.css')
+    script(src="components/zepto/zepto.js")
+    script(src="components/underscore/underscore.js")
+    script(src="components/backbone/backbone.js")
+    script(src="main.js")
+  body
+    h1 @
+      input(placeholder='screen name')
+
+    #results
+
+  script(id='tweet', type='text/template')
+    .item
+      p <%= text %>
+      p.author
+        strong @<%= screen_name %>

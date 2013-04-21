@@ -1,0 +1,25 @@
+{
+  "name": "twitter-mentions-from-couch",
+  "version": "0.0.0",
+  "description": "web interface to search mentions in couchdb",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "twit": "1.1.x",
+    "cradle": "0.6.x",
+    "express": "3.x"
+  },
+  "repository": "",
+  "author": "",
+  "license": "BSD",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-coffee": "~0.7.0",
+    "grunt-contrib-watch": "~0.3.1",
+    "grunt-templater": "0.0.4-1",
+    "jade": "~0.29.0",
+    "grunt-contrib-less": "~0.5.0"
+  }
+}

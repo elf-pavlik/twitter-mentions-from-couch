@@ -1,0 +1,9 @@
+.env
+
+node_modules
+components
+
+public/*.js
+public/*.css
+public/*.html
+

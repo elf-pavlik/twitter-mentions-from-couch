@@ -1,0 +1,14 @@
+{
+  "name": "mentions-web",
+  "version": "0.0.0",
+  "dependencies": {
+    "zepto": "~1.0.0",
+    "underscore": "~1.4.0",
+    "backbone": "~1.0.0"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ]
+}
